@@ -36,7 +36,11 @@ async def main() -> None:
         Message(speaker_id, MessageType.SWITCH_ON)
     ]
     play_song_program = [
-        Message(speaker_id, MessageType.PLAY_SONG, "Rick Astley - Never Gonna Give You Up")
+        Message(
+            speaker_id,
+            MessageType.PLAY_SONG,
+            "Rick Astley - Never Gonna Give You Up"
+        )
     ]
     switch_off_program = [
         Message(hue_light_id, MessageType.SWITCH_OFF),
