@@ -52,9 +52,7 @@ async def main() -> None:
     # run the programs
     # wake_up_program
     await run_sequence(
-        run_parallel(
-            service.run_program(switch_on_program),
-        ),
+        service.run_program(switch_on_program),
         service.run_program(play_song_program),
     )
 
